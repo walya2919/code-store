@@ -1,7 +1,7 @@
 # type differential function in and df
 # type learning rate in lambda
 def df(x):
-    return round(4 * (x**3),2)
+    return round(3 * (x**2), 2)
 Lambda = 0.01
 x = 2.0
 
@@ -19,6 +19,7 @@ def print_subscript(num):
 
 # excute program
 print("x{0} = {1}".format(print_subscript(0), x))
+
 for i in range(10):
     x_prime = round(x - Lambda * df(x), 4)
     print("x{0} = {1} - {2} X {3} = {4}"\
